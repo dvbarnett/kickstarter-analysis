@@ -1,5 +1,40 @@
-# An Analysis of Kickstarter Campaigns
-A brief analysis of Kickstarter campaigns in order to highlight the relationships between funding goals, pledges, country of origin, and success of campaign.
----
+# Kickstarting with Excel
 
-Based upon my findings, it is my recommendation that Louise produces her play for less than £4,000 for the best chance of success.
+## Overview of Project
+
+### Purpose
+
+## Analysis and Challenges
+
+### Analysis of Outcomes Based on Launch Date
+
+### Analysis of Outcomes Based on Goals
+
+### Challenges and Difficulties Encountered
+
+## Results
+
+### Outcomes Based on Launch Date
+
+![Theatre Outcomes vs. Launch](Resources/Theater_Outcomes_vs_Launch.png)
+
+#### First Conclusion
+
+#### Second Conclusion
+- What are two conclusions you can draw about the Outcomes based on Launch Date?
+
+### Outcomes Based on Goals
+
+![Outcomes_vs_Goals](Resources/Outcomes_vs_Goals.png)
+
+#### First Conclusion
+
+#### Second Conclusion
+- What can you conclude about the Outcomes based on Goals?
+
+### Limitations of Dataset
+- What are some limitations of this dataset?
+
+### Further Recommendations
+- What are some other possible tables and/or graphs that we could create?
+
