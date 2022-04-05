@@ -11,27 +11,47 @@ Because Louise indicated she would be campaigning for funding for a play, I deci
 
 ![Parent Category Outcome - Theater](Screenshots/ParentCategoryOutcomesScreenshot.png)
 
-I further analyzed the data by creating a PivotTable utilizing the Subcategory column, showing only the outcomes for the subcategories of theater campaigns. This allowed me to show Louise exactly how many play campaigns has succeeded, failed, or been canceled.
+I further analyzed the data by creating a PivotTable utilizing the Subcategory column, showing only the outcomes for the subcategories of theater campaigns. This allowed me to show Louise exactly how many play campaigns have succeeded, failed, or been canceled.
 
 ![Subcategory Outcome - Theater](Screenshots/SubcategoryOutcomesScreenshot.png)
 
+My next step in analyzing the data was converting the Unix time stamps in columns I and J into a readable format, now represented in columns S and T. Now that we have the start dates and end dates for campaigns, we can more closely analyze how the launch date affects the success of a campaign.
 
 ### Analysis of Outcomes Based on Launch Date
 
+To perform this analysis, I began by making a PivotTable, with the month launched as my row data. For my columns, I selected outcomes and for my values I selected count of outcomes. I then filtered by year and by Parent Category so that I can further specify if necessary. I decided to focus solely on outcomes for theater campaigns.
+
+![Theater Outcomes vs. Launch Data](Screenshots/TheaterOutcomeVsLaunchScreenshot.png)
+
+I then decided to visually represent this data using a line chart with markers, which will be shown in the results portion of this analysis. Visual representation provides a broader look at trends in data and can be extremely useful.
+
 ### Analysis of Outcomes Based on Goals
 
+Launch date appears to have a significant effect on the success of a campaign, however I wanted to further analyze a potential factor in the success of a campaign: its fundraising goal. I did this by creating several budget categories, as shown in the screen shot below.
+
+![Theater Outcomes vs. Goal Data](Screenshots/OutcomesBasedonGoal.png)
+
+I then used the COUNTIF function to pull the number of campaigns that succeeded, failed, or were canceled specifically for the subcategory "plays" and the goal tier indicated to the left. This provided a clear trend which I then decided to visually represent by inserting a line chart, which will be shown below in the results portion.
+
 ### Challenges and Difficulties Encountered
+
+I did initally encounter some difficulty in creating PivotTables, as Excel kept adding blank rows and columns to my data. I was able to remedy this by unselecting the blank options in the row and column filters.
+
+Further on in my analysis, I encountered some difficulty in properly displaying the relationship between goal of a campaign and the percentage of campaigns that were successful, failures, or canceled. The chart was initially unreadable, until I was able to flip the x and y axis and specify the goal tiers as the x-axis values. After toggling these features, the chart displayed correctly.
 
 ## Results
 
 ### Outcomes Based on Launch Date
 
-![Theatre Outcomes vs. Launch](Resources/Theater_Outcomes_vs_Launch.png)
+![Theater Outcomes vs. Launch](Resources/Theater_Outcomes_vs_Launch.png)
 
 #### First Conclusion
 
+My first conclusion in regards to the analysis of Theater Outcomes Based on Launch date is that May is the most successful month to launch a theater campaign, even when taking into consideration that May has more campaigns launched than any other month. June follows closely behind as the second-most successful month to launch a campaign.
+
 #### Second Conclusion
-- What are two conclusions you can draw about the Outcomes based on Launch Date?
+
+The second conclusion I've drawn from this analysis is that the least sucessful months to launch a campaign are October and December. October has a higher number of failed campaigns, but had more campaigns launched overall than December. The percentage of failed campaigns for October and December were 43% and 47% respectively.
 
 ### Outcomes Based on Goals
 
@@ -39,12 +59,23 @@ I further analyzed the data by creating a PivotTable utilizing the Subcategory c
 
 #### First Conclusion
 
+The first significant conclusion I arrived at when analyzing this data is that the most successful fundraising goals were those between $0 to $5000, with goals under $1000 having the highest percentage of success overall. This is logical, as a smaller goal is more likely to be funded by smaller, individual contributions.
+
 #### Second Conclusion
-- What can you conclude about the Outcomes based on Goals?
+
+The second conclusion I arrived at was that, with the exception of outliers in the $35,000 - $45,000 goal range, the higher the goal is, the less likely it is that the campaign will be successful. Again, this is logical as Kickstarters are funded by individual contributions which are likely to be smaller in nature. If a goal is lofty, it is extremely unlikely to be funded by small individual contributions unless the campaign goes "viral."
 
 ### Limitations of Dataset
-- What are some limitations of this dataset?
+
+#### First Limitation
+
+A limitation that I initially noticed in this dataset is that the Outcomes Based on Launch Date chart takes into account the number of successful/failed/canceled campaigns, but does not take into account how many campaigns were launched in that month overall. For example, 2.2x more campaigns were launched in May than in December. I feel as though it would have been better to analyze what percentage of campaigns were successful, failed or canceled as opposed to how many.
+
+#### Second Limitation
+
+Another limitation I noticed were the outliers in the Outcomes Based on Goals chart. Based upon the overall trend of the chart, you would expect the percentage of success to linearly decrease as the goal increased. However, due to the small number of campaigns launched with goals between $35,000 and $45,000, their percentage of success is significant even though only 6 plays were successful. 
 
 ### Further Recommendations
-- What are some other possible tables and/or graphs that we could create?
+
+As mentioned above, I feel as thought it would be effective to calculate the percentage of plays that were successful, failed or canceled and compare it to the Launch date to get a more accurate representation of which month would be better for launching a campaign. In addition, I think it would interesting to investigate the average number of backers per campaign goal tier, possibly visualized via a line chart, to help show Louise which campaign goal attracts the highest number of backers.
 
