@@ -77,5 +77,5 @@ Another limitation I noticed were the outliers in the Outcomes Based on Goals ch
 
 ### Further Recommendations
 
-As mentioned above, I feel as thought it would be effective to calculate the percentage of plays that were successful, failed or canceled and compare it to the Launch date to get a more accurate representation of which month would be better for launching a campaign. In addition, I think it would interesting to investigate the average number of backers per campaign goal tier, possibly visualized via a line chart, to help show Louise which campaign goal attracts the highest number of backers.
+As mentioned above, I feel as thought it would be effective to calculate the percentage of plays that were successful, failed or canceled and compare it to the launch date to get a more accurate representation of which month would be better for launching a campaign. In addition, I think it would interesting to investigate the average number of backers per campaign goal tier, possibly visualized via a line chart, to help show Louise which campaign goal attracts the highest number of backers.
 
