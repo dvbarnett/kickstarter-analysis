@@ -7,7 +7,7 @@ This analysis was intended to assist client Louise in forecasting what her prior
 ## Analysis and Challenges
 I began my analysis by applying visual formatting to the data by color-coding the "outcomes" column through conditional formatting. I then further determined *how* successful a campaign was by introducing a new column, "Percentage Funded," in which I calculated to what extent a campaign was funded compared to its original goal. Visual formatting was also applied to this column via a color scale from red to blue. Next, a new column was introduced with the intention of calculating the average donation per campaign backer, calculated by dividing the total pledged (column E) by the number of backers (column L). I noticed that this calculation provided errors for campaigns that had no backers, so I applied the "IFERROR" formula to compensate and clean the data. 
 
-Because Louise indicated she would be campaigning for funding for a play, I decided to seperate the "Category/Subcategory column into two seperate columns, "Parent Category" and "Subcategory." This allowed me to perform a more in-depth analysis utilizing PivotTables, indicating the number of outcomes specifically for the Parent Category "theater" as shown in the screenshot below.
+Because Louise indicated she would be campaigning for funding for a play, I decided to seperate the Category/Subcategory column into two seperate columns, "Parent Category" and "Subcategory." This allowed me to perform a more in-depth analysis utilizing PivotTables, indicating the number of outcomes specifically for the Parent Category "theater" as shown in the screenshot below.
 
 ![Parent Category Outcome - Theater](Screenshots/ParentCategoryOutcomesScreenshot.png)
 
